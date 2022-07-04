@@ -1,30 +1,34 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+### Day 0: July 4, 2022 (Monday, holiday)
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**: Studied AWS solution architect associate
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**What I learned**:
+- AWS lambda function
+  - Can be invoke synchronously (using CLI or API gateway), asynchronously (by other AWS services) or via event source mapping (e.g. aws kinesis, dynamoDB)
+  - Function-as-servce produce: A piece of code that run in a runtime environment, users only have to specify the memory and don't have to manage the servers. 
+  - Lambda times out in 15 mins (900s).
+  - Lambda function needs to be stateless.
+  - Public lambda can access everything in the internet but not things in VPC. 
+  - Private lambda behaves just like other AWS services within VPC.
+  - Lambda needs to assume execution role as well as have resource policy (for other service to invoke lambda).
+  
+- Serverless architecture
+  - users don't manage any severs
+  - Applications only bill when they are running.
+  - Mostly FasS products like lambda
+  - Applications are ephemeral and stateless. 
+ 
+- SNS
+  - SNS = simple notification service
+  - regional resilience
+  - Pub-sub service
+  - Producers send events to TOPICS
+  - Consumers consume events from TOPICS
+  - TOPICS uses resource policy to control permission; and config cross account access.
+  - Support delivery retry, delivery status and server side encryption (SSE).
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Thoughts:** 
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
-
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
-
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link(s) to work**: [Calculator App](http://www.example.com)
-
-
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
-
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+**Link to work:** 
