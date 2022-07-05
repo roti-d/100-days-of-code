@@ -2,7 +2,7 @@
 
 ### Day 0: July 4, 2022 (Monday, holiday)
 
-**Today's Progress**: Studied AWS solution architect associate
+**Today's Progress**: Studied AWS solution architect associate; started 100 days of code in Python
 
 **What I learned**:
 - AWS lambda function
@@ -29,6 +29,10 @@
   - TOPICS uses resource policy to control permission; and config cross account access.
   - Support delivery retry, delivery status and server side encryption (SSE).
 
-**Thoughts:** 
+- Python
+  - started coffee machine project
+  - installed Pycharm.
+
+**Thoughts:** I miss coding, especially the feeling of learning and using my brain. I pretty much have forgotten everything I learned in the past; I had to look up how to define functions, how to write if...else statements; but that's okay, that's part of the learning. I want to keep up with the learn and can't wait to see where I will be in 100 days. 
 
 **Link to work:** 
