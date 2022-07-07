@@ -36,3 +36,25 @@
 **Thoughts:** I miss coding, especially the feeling of learning and using my brain. I pretty much have forgotten everything I learned in the past; I had to look up how to define functions, how to write if...else statements; but that's okay, that's part of the learning. I want to keep up with the learn and can't wait to see where I will be in 100 days. 
 
 **Link to work:** 
+
+### Day 1: July 5, 2022 (Tuesday)
+
+**Today's Progress**: Finished off "Day 15 of 100 days of code - make a coffee machiine" project, watched 1-2 AWS videos
+
+**What I learned**:
+- Reminded myself of using while loop
+- AWS step function: has state machine that allows users to run functions that are longer than 15 mins (tracks the state)
+
+**Thoughts:** Didn't make much progress today as I wasn't feeling well. I was in bed pretty much the entire day. 
+
+### Day 2: July 6, 2022 (Wed)
+
+**Today's Progress**: Worked on OOP in python, finished rewriting the make coffee machine project in OOP (Day 16 lecture), finished AWS demo for setting up state machine with serverless architecture
+
+**What I learned**:
+- How to configure AWS to send emails and SMS
+- How to configure state machine to trigger lambda function
+- How to set up API gateway and REST API in AWS
+
+**Thoughts:** Dealing with objects in python is tricky. Need more work. 
+
