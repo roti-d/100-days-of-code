@@ -58,3 +58,15 @@
 
 **Thoughts:** Dealing with objects in python is tricky. Need more work. 
 
+### Day 3: July 7, 2022 (Thurs)
+
+**Today's Progress**: 
+- Rewrite OOP coffee machine project that I was working on yesterday to get the object working. 
+- Finished Day 17 of 100 days of code that uses OOP to create a quiz game.
+
+**What I learned**:
+- How to define class in Python
+- How to add attribute and methods to class
+- More practice in how to write while loops
+
+**Thoughts:** Feeling a bit more comfortable with coding in Python, this is fun.
