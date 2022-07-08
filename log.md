@@ -63,10 +63,16 @@
 **Today's Progress**: 
 - Rewrite OOP coffee machine project that I was working on yesterday to get the object working. 
 - Finished Day 17 of 100 days of code that uses OOP to create a quiz game.
+- Watched AWS Kinesis videos
+ 
 
 **What I learned**:
 - How to define class in Python
 - How to add attribute and methods to class
 - More practice in how to write while loops
+- Learned about Kinesis stream, Kinesis firehose and Kinesis analytics; and also AWS Cognito
+  - Kinesis stream: use for data streaming, multiple producer and multiple consumers, real time
+  - Kinesis firehose: near real time as data is batch into 60 seconds or 1MB buffer, support data transformation like Lambda; use for data persistent; can be sent to HTTP, Splunk, Redshift, Elastic Search or S3. 
+  - Kinesis analytics: use for real time data processing using SQL
 
 **Thoughts:** Feeling a bit more comfortable with coding in Python, this is fun.
