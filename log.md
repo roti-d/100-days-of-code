@@ -76,3 +76,28 @@
   - Kinesis analytics: use for real time data processing using SQL
 
 **Thoughts:** Feeling a bit more comfortable with coding in Python, this is fun.
+
+### Day 4: July 8, 2022 (Fri)
+
+**Today's Progress**: 
+- Almost finish Day 18 of 100 days of code (Drawing using Turtle package in Python).
+- Was stuck when drawing Spirograph
+- Didn't make as much progress as I would like to as I went out last night with coworkers. It was fun though.
+ 
+**What I learned**:
+- Got more comfortable using the turtle modeules and writing functions / loops.  
+
+**Thoughts:** Daily progress is important. Didn't log yesterday so have to do it today (Sat).
+
+
+### Day 5: July 9, 2022 (Sat)
+
+**Today's Progress**: 
+- Wrapped up Day 18 (woke up with a much clear head and was able to do it pretty fast).
+- Finished Day 19; using Turtle package to build a turtle racing game. 
+
+**What I learned**:
+- Learned how to have multiple turtles moving at the same time. 
+- Learned about instances and object state.
+
+**Thoughts:** This is fun!
