@@ -101,3 +101,19 @@
 - Learned about instances and object state.
 
 **Thoughts:** This is fun!
+
+### Day 6: July 10, 2022 (Sun)
+
+**Today's Progress**: 
+- Finished Cloudfront (CDN) section of the AWS course
+- Half way for Day 20 of 100 days of code, writing snake game
+
+**What I learned**:
+- Cloudfront is the AWS version of global CDN.
+- There are two types of connections in cloudfront: client to edge location, and edge location to origin
+- Origin type can be S3 buckets or custom origin.
+  - To secure S3 connection, use OAI (origin access identity)
+  - To secure custom origin, use firewalls around origin or custom header.
+- Global accelerator is a network product; goal is to get requests onto AWS network ASAP. 
+
+**Thoughts:** Not too bad, not as much progress as I would like to, but still not bad. Keep it up! Getting AWS certified and becoming VERY GOOD at python would set up me in becoming a software developer / devops or a very good TPM.
