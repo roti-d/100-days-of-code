@@ -123,10 +123,20 @@
 **Today's Progress**: 
 - Finished day 20 of 100 days of code to build a snake game.
 - It wasn't suppose to take that long, but I was playing around with it to make the snake move around, the add target and increase the length of the snake whenever it meets the target.
+- Watched two AWS videos.
 
 **What I learned**:
 - Refresher on how to create object.
 - Read a bit on object inheritance and lambda funcition.
+- Egress-only internet gateway: 
+  - is for IPv6 as NAT gateway doesn't work for IPv6. 
+  - Egress-only gateway allows traffic going out but block external initated traffic. 
+- VPC flow logs:
+  - captures traffic in and out VPC, only logs metadata like source & dest IP address, port number, packet size but not the packet content.
+  - Flow logs destination can be S3 or Cloudwatch logs (if S3, it can be queried by Athena).
+  - Flow logs is NOT REALTIME. 
+  - Flow logs can be set at different level: VPC, subnets or ENI (elastic network interface). 
+
 
 **Thoughts:** Didn't have enough sleep last nigth so felt pretty slow today, but kind of manage to power through. Didn't work much though and feeling a bit stress about job search. Was a youtube video yesterday about "the shortest path of becoming a software engineer" is to learn AWS and Python..I think I'm on the right track, now just have to stick with it! 
 - Goal for the month is to: Get AWS certified.
