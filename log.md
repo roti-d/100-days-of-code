@@ -117,3 +117,19 @@
 - Global accelerator is a network product; goal is to get requests onto AWS network ASAP. 
 
 **Thoughts:** Not too bad, not as much progress as I would like to, but still not bad. Keep it up! Getting AWS certified and becoming VERY GOOD at python would set up me in becoming a software developer / devops or a very good TPM.
+
+### Day 7: July 11, 2022 (Mon)
+
+**Today's Progress**: 
+- Finished day 20 of 100 days of code to build a snake game.
+- It wasn't suppose to take that long, but I was playing around with it to make the snake move around, the add target and increase the length of the snake whenever it meets the target.
+
+**What I learned**:
+- Refresher on how to create object.
+- Read a bit on object inheritance and lambda funcition.
+
+**Thoughts:** Didn't have enough sleep last nigth so felt pretty slow today, but kind of manage to power through. Didn't work much though and feeling a bit stress about job search. Was a youtube video yesterday about "the shortest path of becoming a software engineer" is to learn AWS and Python..I think I'm on the right track, now just have to stick with it! 
+- Goal for the month is to: Get AWS certified.
+- Goal for the 3 month is to: Get very good with Python. (i.e. be able to contribute to open source project or take freelance job).
+
+
