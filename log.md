@@ -137,9 +137,20 @@
   - Flow logs is NOT REALTIME. 
   - Flow logs can be set at different level: VPC, subnets or ENI (elastic network interface). 
 
-
 **Thoughts:** Didn't have enough sleep last nigth so felt pretty slow today, but kind of manage to power through. Didn't work much though and feeling a bit stress about job search. Was a youtube video yesterday about "the shortest path of becoming a software engineer" is to learn AWS and Python..I think I'm on the right track, now just have to stick with it! 
 - Goal for the month is to: Get AWS certified.
 - Goal for the 3 month is to: Get very good with Python. (i.e. be able to contribute to open source project or take freelance job).
 
+### Day 8: July 12, 2022 (Tue)
 
+**Today's Progress**: 
+- Completed Advanced VPC session in AWS course and did the VPC peering demo and interface endpoint, gateway endpoint and egress demo.
+
+**What I learned**:
+- VPC peering only connects TWO and Only TWO VPCs.
+- VPC peering is not transitive, if more than 2 VPCs need to be connected, need to set up separate peering connection. 
+- VPC peering can be same or cross account; and same or cross regions.
+- For VPC peering in the same region, the VPC can refer to each other's SGs. For cross region, needs to refer to IP or IP ranges. 
+- how does VPC peering work? Logical gateway is set up in each VPC; and thus needs to configure route tables and SG and/NACL. 
+
+**Thoughts:** Okay progress so far, definitely feel better today after getting more sleep. Probably need to start doing some practice exams and review to make sure I don't forget previous content. 
