@@ -154,3 +154,15 @@
 - how does VPC peering work? Logical gateway is set up in each VPC; and thus needs to configure route tables and SG and/NACL. 
 
 **Thoughts:** Okay progress so far, definitely feel better today after getting more sleep. Probably need to start doing some practice exams and review to make sure I don't forget previous content. 
+
+### Day 9: July 13, 2022 (Wed)
+
+**Today's Progress**: 
+- Had a pretty long day with work and interview, didn't get as much done as I wanted to. 
+- Finished Day 21 of 100 days of code to finish off the snake game. 
+- Started Day 22 to set up the Pong game, got the gameboard, scoreboard and the two players setup. Messing around with the balls and angles.
+
+**What I learned**:
+- How to pass in arguments when inheriting a class.
+
+**Thoughts:** Not getting as much done as I would love to, but progress is progress :) 
