@@ -166,3 +166,15 @@
 - How to pass in arguments when inheriting a class.
 
 **Thoughts:** Not getting as much done as I would love to, but progress is progress :) 
+
+### Day 10: July 14, 2022 (Thurs)
+
+**Today's Progress**: 
+- Had a long day of interviews and team match so didn't get too much time to study. 
+- Finished off Day 22 of 100 days of code to finish off the pong game. 
+- Finally got the ball to bounce right and got the scoring board to work. I watched the solution after building out the game myself and the solution was much simplier! I definitely overthink the ball bouncing logic and was trying to determine the incoming and outgoing angle. 
+
+**What I learned**:
+- A much simplier way to get the ball to bounce
+
+**Thoughts:** Need to book the AWS exam soon, I wanna take it before mid-Aug, so at most one more month to go.
