@@ -178,3 +178,28 @@
 - A much simplier way to get the ball to bounce
 
 **Thoughts:** Need to book the AWS exam soon, I wanna take it before mid-Aug, so at most one more month to go.
+
+### Day 11: July 15, 2022 (Fri)
+
+**Today's Progress**: 
+- Another long day with team match calls and had to work a bit so didn't get much done.
+- Started Day 23 of 100 days of code to build a Turtle crossing game.
+- Got the turtle and cars to move but kind of "hack" together a way for making a stream of cars. This needs to be revised. 
+
+**What I learned**:
+- More practice in python.
+
+**Thoughts:** Goal for python is to do a hackathon by the end of this year.
+
+
+### Day 11: July 16, 2022 (Sat)
+
+**Today's Progress**: 
+- Finsihed day 23 of 100 days code to build the Turtle crossing game. Figured out a way to get the stream of the cars to work soon after I woke up :) 
+- Finished day 24 of 100 days to read, write and merge files. 
+
+**What I learned**:
+- how to read, write and merge files in python.
+- play around with Google gmail API; keep getting permission error, not wokring yet.
+
+**Thoughts:** I probably need to spend a bit more time on AWS, will focus more on that.
