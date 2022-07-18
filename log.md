@@ -203,3 +203,63 @@
 - play around with Google gmail API; keep getting permission error, not wokring yet.
 
 **Thoughts:** I probably need to spend a bit more time on AWS, will focus more on that.
+
+### Day 11: July 16, 2022 (Sat)
+
+**Today's Progress**: 
+- Half way through the 25th days of code..learning about how data manipulation.
+- Continue to watch the videos on AWS hybrid mode and migration.
+
+**What I learned**:
+- AWS site-to-site VPN: 
+  - easies way to connect on-perm network with VPC
+  - fast to set up (within an hour)
+  - encryption via IPSec
+  - run over public internet
+  - bandwidth: 1.25Gbps
+  - Not HA by default as CGW can be a single point of failure
+  - architecture: 
+    - VPC and on-perm router
+    - CGW (customer gateway)
+    - VPG (vitual private gateway)=> has two physical endpoints that can be connected to CGW
+    - Connection between CGW and VPG
+- Direct connect (DX)
+  - Takes weeks or months to set up
+  - Usually people first set up site-to-site VPN while waiting for DX
+  - Data no encrypted. 
+    - To make it encrypted, instead of connceting to VPC router, connect it with VPG endpoints then leverage IPSec encryption.
+  - bandwidth: 10 Gbps
+  - Not HA by default as it involves many single physical failure point
+  - architecture: 
+    - AWS port in AWS site
+    - Customer or partner port in AWS site
+    - Fiber to connect AWS port and customer port
+    - Fiber to connect customer port in AWS site to customer on-perm router
+- Transit gateway
+  - Transit hub to connect VPCs and/or customer on-perm networks via attachments like peering, site-to-site VPN, DX. 
+  - Simplify the network design a lot
+  - Support static and dynamic routing. If dynamic routing is enabled, routes will be propagate to route tables use BGP (boarder gateway protocol) => only best route is communicated to other networks. 
+- Snowball, Snowball Edge and Snowball mobile
+  - all use for moving large amount of data in/out of AWS.
+  - Snowball: 
+    - data around 10TB to 10PB
+    - suitcase size boxes mail to customer 
+    - data is encrypted at rest
+  - Snowball edge:
+    - data > 10PB
+    - can be multiple site
+  - Snowball mobile
+    - physical truck => only go to on-site and plug-in directly to data centers
+    - need special order
+    - data > 10PB?
+- Storage gateway
+  - use case:
+    - Migration to AWS
+    - Backup data (Tape or file)
+    - Extending on-perm storage to AWS
+  - Types:
+    - File stored gateway
+    - Volume stored / volume cached gateway
+    - Tape stored gateway
+
+**Thoughts:** Never give up!
