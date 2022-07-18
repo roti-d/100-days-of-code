@@ -216,28 +216,32 @@
   - fast to set up (within an hour)
   - encryption via IPSec
   - run over public internet
-  - bandwidth: 1.25Gbps
+  - latency: 1.25Gbps
   - Not HA by default as CGW can be a single point of failure
   - architecture: 
     - VPC and on-perm router
     - CGW (customer gateway)
-    - VPG (vitual private gateway)=> has two physical endpoints that can be connected to CGW
+    - VGW (vitual private gateway)=> has two physical endpoints that can be connected to CGW
     - Connection between CGW and VPG
 - Direct connect (DX)
   - Takes weeks or months to set up
   - Usually people first set up site-to-site VPN while waiting for DX
   - Data no encrypted. 
-    - To make it encrypted, instead of connceting to VPC router, connect it with VPG endpoints then leverage IPSec encryption.
-  - bandwidth: 10 Gbps
+    - To make it encrypted, instead of connceting to public VIPS, connect it with VGW endpoints then leverage IPSec encryption.
+  - latency: 40 Gbps
   - Not HA by default as it involves many single physical failure point
   - architecture: 
     - AWS port in AWS site
     - Customer or partner port in AWS site
     - Fiber to connect AWS port and customer port
     - Fiber to connect customer port in AWS site to customer on-perm router
-- Transit gateway
+    - VIFS (virtual interfaces = one VLAN adn one BGP session on customer side
+- Transit gateway (TGW)
   - Transit hub to connect VPCs and/or customer on-perm networks via attachments like peering, site-to-site VPN, DX. 
   - Simplify the network design a lot
+  - HA by default
+  - Support cross-region or cross account peering
+  - For any AZs within VPC that wants to use TGW, each needs its own VPC attachment
   - Support static and dynamic routing. If dynamic routing is enabled, routes will be propagate to route tables use BGP (boarder gateway protocol) => only best route is communicated to other networks. 
 - Snowball, Snowball Edge and Snowball mobile
   - all use for moving large amount of data in/out of AWS.
@@ -245,13 +249,15 @@
     - data around 10TB to 10PB
     - suitcase size boxes mail to customer 
     - data is encrypted at rest
+    - can be multiple site
   - Snowball edge:
     - data > 10PB
     - can be multiple site
+    - Use when data neeeds to be processed upon ingestion or in a remote site
   - Snowball mobile
     - physical truck => only go to on-site and plug-in directly to data centers
     - need special order
-    - data > 10PB?
+    - data between 10PB to 100PB
 - Storage gateway
   - use case:
     - Migration to AWS
