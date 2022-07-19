@@ -192,7 +192,7 @@
 **Thoughts:** Goal for python is to do a hackathon by the end of this year.
 
 
-### Day 11: July 16, 2022 (Sat)
+### Day 12: July 16, 2022 (Sat)
 
 **Today's Progress**: 
 - Finsihed day 23 of 100 days code to build the Turtle crossing game. Figured out a way to get the stream of the cars to work soon after I woke up :) 
@@ -204,7 +204,7 @@
 
 **Thoughts:** I probably need to spend a bit more time on AWS, will focus more on that.
 
-### Day 11: July 16, 2022 (Sat)
+### Day 13: July 17, 2022 (Sun)
 
 **Today's Progress**: 
 - Half way through the 25th days of code..learning about how data manipulation.
@@ -269,3 +269,47 @@
     - Tape stored gateway
 
 **Thoughts:** Never give up!
+
+
+
+### Day 14: July 18, 2022 (Mon)
+
+**Today's Progress**: 
+- Finsihed day 25 of 100 days of code, which builds a "Guess state name game" using Turtle. 
+- Watched 2 AWS videos (AWS directory service and DataSync)
+
+**What I learned**:
+- Python:
+  - How to use Turtle to show pictures.
+  - Got some practice with Pandas DataFrame, played around with .loc
+- AWS:
+  - AWS directory service
+    - What is directory? An inverted tree that stores identity objects (e.g. users, groups, servers etc.) Common ADs are Microsoft AD and SAMBER
+    - Use by ITs to manage multi-device logins using same passwords
+    - Some AWS services (e.g. Workspace) needs AD
+    - Runs with in VPC as private service, can be deployed to multi-AZ.
+    - Waht are the different types of AWS directory services? 
+      - Simple AD: should be used by default
+      - Microsoft AD: use when there is already an on-perm system and need full implementation of AD. 
+      - AD connectors: use when only 1 or few AWS services need AD, AD connectors act as proxy. The primary AD still runs on-perm.
+ - DataSync
+    - Use for transferring data IN or OUT of AWS
+    - Also stores metadata
+    - Provides data validation by default
+    - Use cases: Data backup, DR, migration to AWS, Data processing transfer
+    - Supports scheduled backups or incremental backups.
+    - Supports compression and encryption.
+    - Pay as you use the product.
+    - Can be single AZ or multi-AZ. 
+    - Destination can be S3, EFS, FXs (for windows)
+    - Design to support large quantity of data (different from Snowball products as those are physical transfer)
+    - Support encryption by default
+    - Users have ability to throttle the data transfer amount
+    - Can be connected via VPC, direct connect, peering
+    - Each DataSync agent can transfer up to 10GB/sec (~100TB per day)
+    - Components:
+      - DataSync agent
+      - On-perm file system
+      - Destination (S3, EFS, VPC etc.)
+
+**Thoughts:** I probably need to spend a bit more time on AWS, will focus more on that.
