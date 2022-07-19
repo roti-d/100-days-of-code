@@ -312,4 +312,4 @@
       - On-perm file system
       - Destination (S3, EFS, VPC etc.)
 
-**Thoughts:** I probably need to spend a bit more time on AWS, will focus more on that.
+**Thoughts:** Not a bad day given I had 3 interviews today. need to protect my morning hours for learning as I tend to get very tired and lose my focus after Noon. 
