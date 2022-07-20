@@ -313,3 +313,45 @@
       - Destination (S3, EFS, VPC etc.)
 
 **Thoughts:** Not a bad day given I had 3 interviews today. need to protect my morning hours for learning as I tend to get very tired and lose my focus after Noon. 
+
+
+
+### Day 15: July 19, 2022 (Tue)
+
+**Today's Progress**: 
+- Finsihed day 26 of 100 days of code, which talks about list and dictionary comprehension.
+- Finished the AWS section on Hybrid architecture.
+
+**What I learned**:
+- Python:
+  - List and dictionary comprehension. 
+  
+- AWS: 
+  - AWS FXs for Window
+    - Fully managed file share, similar to RDS
+    - Can be connected with on-perm AD or AWS directory service
+    - Can be multi-AZ or single AZ
+    - Support on-demand backup or incremental backup
+    - Support file level versioning
+    - Can be access via VPC, Peering, Direct conncet or VPN
+    - Access to native file system via SMB (Server message block)
+    
+  - AWS FXs for Lustre
+    - Fully managed file system for linux, support POSIX
+    - How does this different from EFS? AWS FXs for Lustre is mostly use for workloads that require heavy compute (e.g. ML, financial modeling)
+    - Highly perforamnce 
+    - Has two modes: 
+      - Scratch: fast, but no replication
+      - Persistent: has replication, but only within 1 AZ
+    - File system => place where data lives when processing
+    - (Optinoal) S3 bucket to backup data
+    - Can be access via VPN or direct connect
+    - [Link](https://tutorialsdojo.com/amazon-efs-vs-amazon-fsx-for-windows-vs-amazon-fsx-for-lustre/)
+    
+  - AWS secret manager
+    - Place where secrets (Passwords/ API etc) are stored
+    - Supports key rotation
+    - Keys encrypted using KMS
+    - Connected to some AWS services like RDS (when key rotates, credentials in RDS also get updated) 
+
+**Thoughts:** Not a bad day given I had 3 interviews today. need to protect my morning hours for learning as I tend to get very tired and lose my focus after Noon. 
