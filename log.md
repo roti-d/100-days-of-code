@@ -355,3 +355,23 @@
     - Connected to some AWS services like RDS (when key rotates, credentials in RDS also get updated) 
 
 **Thoughts:** Not a bad day given I had 3 interviews today. need to protect my morning hours for learning as I tend to get very tired and lose my focus after Noon. 
+
+
+### Day 16: July 20, 2022 (Wed)
+
+**Today's Progress**: 
+- Finsihed day 27 of 100 days of code, which uses a new package (Tkinter) to build GUI. 
+- Started to look into AWS practice exams on Tutorials-Dojo but didn't make much progress
+
+**What I learned**:
+- Python:
+  - Tkinter: how to add buttons, labels, inputs to GUI; how to position widget in the UI using grid(), pack() and place().
+  
+- EC2:
+  - Default only allows 20 instances within the same region, but this can be lifted if file tickets to AWS. 
+  - EC2 on-demand instances doesn't provide reservation and need to pay the instance even when it's not running.
+  - EC2 on-demand capacity reservation reserve capacity and charge for the instance on the specified recurring schedule. (e.g. good for batch jobs).
+
+**Thoughts:** 
+- Need to do a better job at keeping this journel and instead of writing it the day after. I will try to write this every nighit. 
+- Need to put in more time in reviewing AWS, feel like I have forgotten all the previous topics. 
