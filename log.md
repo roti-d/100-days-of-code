@@ -375,3 +375,37 @@
 **Thoughts:** 
 - Need to do a better job at keeping this journel and instead of writing it the day after. I will try to write this every nighit. 
 - Need to put in more time in reviewing AWS, feel like I have forgotten all the previous topics. 
+
+### Day 17: July 21, 2022 (Thurs)
+
+**Today's Progress**: 
+- Finished AWS security related videos. 
+- Started day 28 of 100 days of code, which uses Tkinter to build a pomodoro. Didn't watch any of the initial promopt and was struggling quite a bit as I couldn't get the counter to work in Tkinter. The counter works fine just as a function itself, but not able to update the label accordingly. 
+
+
+**What I learned**:
+- Python:
+  - More practice with Tkinter.
+  - Learned about mainloop() and after()..still not very clear though
+  
+- AWS:
+  - 
+
+**Thoughts:** 
+- Took it a bit easy last ngiht to spend some time with DJ, so didn't study too much. Also worked a bit more, need to find more time and be more focus. Also started re-watching Jim Kwik's focus course. I have been listening to Brain.fm when working, seems like it helped with my focus. 
+
+### Day 18: July 22, 2022 (Fri)
+
+**Today's Progress**: 
+- Finished day 28 of 100 days of code, which uses Tkinter to build a pomodoro. Finally got the pomodoro to work without watching any promopt. Figured out that i need to use time.sleep() and window.update() to get the label updated. I thought I tried it yesterday but not sure why it didn't work.
+
+
+**What I learned**:
+- Python:
+  - More practice with Tkinter.
+  - How to get the counter working using Tkinter.
+  
+
+**Thoughts:** 
+- I used this morning usual study time to work so have to study in the evening. Not ideal but happy that I'm making some progress and more importantly showing up every day.
+- Did 3 team match calls today and had lots of back-to-back meetings so was a bit tired. Feeling good that I still show up for study :) 
