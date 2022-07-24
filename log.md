@@ -388,8 +388,36 @@
   - More practice with Tkinter.
   - Learned about mainloop() and after()..still not very clear though
   
-- AWS:
-  - 
+- AWS security products:
+  - AWS Shield: 
+    - Protect against DDOS attack, Layer 3 and layer 4
+    - Understand HTTP, HTTPS and TCP
+    - Comes in (1) Free with Route 53 and CloudFront (2) Paid - $3000 per month with EC2,ELB,Cloudfront,Route53 and global accelerator; paid version comes with insurance and incidents response team.
+  - AWS WAF (web applciation firewall)
+    - Layer 7 protection, can be integrated in ALB, Cloudfront and API gateway using WEBACL (web access control list)
+    - Protect against more sphosicated attacks, e.g. SQL injection, cross-site scripting
+    - WAF has geo blocks and rate awareneess
+  - CloudHSM
+    - Different than KMS as AWS doesn't own the key at all. 
+    - CloudHSM is genereated in a physical location and can be uesd as the custom KMS.
+    - Meets FIPS 140-2 Level3 security standard; KMS is only level2.
+    - CloudHSM uses industry standard APIs - PKCS#11, JCE and CryptoNG
+    - CloudHSM is the right choice for any non-AWS product that needs HSM. 
+  - AWS Config
+    - Stores changes related to resources (e.g. Security group of S3 bucket changes)
+    - Doesn't protect against the change but can trigger runs to SNS, EventBridge and Lambda
+    - Regional service, support cross-region and cross account aggregation
+  - AWS Macie
+    - Use ML to detect PII/ PHI/ Financial data in S3 buckets
+    - Have AWS managed rules or custom data identifiers
+    - Generate findings that can be sent to EventBridge or console
+    - Is Centrally managed in AWS ORG account or in one Macie accoutn and invite others
+  - AWS Inspector
+    - Scan EC2 and ECS OS for vulnerabilities and deviation against best practices
+    - Check for Network reachability E2E (no agent required)
+    - Check for CVS, CIS and Security best practice (required agent)
+  - AWS Guardduty
+    - Detect suspicious account activity
 
 **Thoughts:** 
 - Took it a bit easy last ngiht to spend some time with DJ, so didn't study too much. Also worked a bit more, need to find more time and be more focus. Also started re-watching Jim Kwik's focus course. I have been listening to Brain.fm when working, seems like it helped with my focus. 
