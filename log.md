@@ -409,3 +409,24 @@
 **Thoughts:** 
 - I used this morning usual study time to work so have to study in the evening. Not ideal but happy that I'm making some progress and more importantly showing up every day.
 - Did 3 team match calls today and had lots of back-to-back meetings so was a bit tired. Feeling good that I still show up for study :) 
+
+### Day 19: July 23, 2022 (Sat)
+
+**Today's Progress**: 
+- Watched the videos for day 28 of 100 days of code. Have more understanding of how tkinter.after() works and found out how to stop the .after loop, which is to call .after_cancel().
+- Finished day 29 of 100 days of code to build a password manager. I built the whole thing before watching the video and even built a way to retrieve the password. It was really fun.
+
+
+**What I learned**:
+- Python:
+  - More pracetice with list comprehension. [new item for item in list] 
+  - More practice with pandas and how to write / read from files.
+  - Tkinter:
+    - How .after works and how to break out of the .after loop by calling .after_cancel. 
+    - grid(): how to create columns that span across more than 1 column by specifying columnspan
+    - Add and remove boarders 
+    - Show popup box
+  
+**Thoughts:** 
+- Coded for a bit over 5 hours today; not bad. 
+- Going to pick up on AWS stuff. 
