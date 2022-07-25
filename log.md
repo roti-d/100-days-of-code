@@ -458,3 +458,27 @@
 **Thoughts:** 
 - Coded for a bit over 5 hours today; not bad. 
 - Going to pick up on AWS stuff. 
+
+
+### Day 20: July 24, 2022 (Sun)
+
+**Today's Progress**: 
+- Finished day 30 of 100 days of code which talks about error handling; and build upon the previous NATO project and password manager project.
+- Watched a few videos in AWS cloudformation.
+
+
+**What I learned**:
+- Python:
+  - How to handle JSON data using JSON.load,JSON.dump and JSON.update.
+  - Review error handling (try, except, else and finally).
+- AWS:
+  - Cloudformation:
+    - Templates can be portable and non-portable. 
+    - Reason some templates are non-portable can be: have hardcoded S3 bucket name or have AMI names and trying to use the template in other region.
+    - Tempalte specify logical resources where AWS will use it to create physical resources.
+    - Cloudformation has template parameters (specify by user), Peusdo parameter (inject by AWS) and has Intrinsic function which allows users to reference runtime variables. 
+    - Mappings allow user to look up variables.
+    - Output: the output message that user will see in console or CLI. 
+  
+**Thoughts:** 
+- Today was okay. This afternoon went to Raz house so didn't have the full day to study. A bit stressed about work and tomorrow's meeting with X, not sure what to expect but I guess I will do my best and not set any expectation. 
