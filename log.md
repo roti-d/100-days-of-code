@@ -497,3 +497,16 @@
 **Thoughts:** 
 - Didn't get as much study done as I would like to (~1 hour python). Been working a lot today, so will catch up tomorrow! Met with Sulil from X today and had a really good chat. Seems like a great oppotunity to work on and great leader to learn from. Beyond grateful to be this lucky to have a chat with them.
 
+### Day 22: July 26, 2022 (Tue)
+
+**Today's Progress**: 
+- Finished day 31 of 100 days of code which builds a flashcard app. Got all the functionality done before watching the solution videos. The hardestk part was to figure out how to wait for 3 seconds when the card is showing french and to wait for user click when the card is showing eng. I also added the ability to randomly insert words that user got wrong back into the stack and be able to save process on exit.
+
+
+**What I learned**:
+- Python:
+  - How to trigger actions on tkinter exit
+  - Lambda functions: use as functions when some variables are unknown.
+ 
+**Thoughts:** 
+- So far studied for ~2 hours on python. Will try to get some work done on AWS later on. :) 
