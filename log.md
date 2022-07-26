@@ -482,3 +482,18 @@
   
 **Thoughts:** 
 - Today was okay. This afternoon went to Raz house so didn't have the full day to study. A bit stressed about work and tomorrow's meeting with X, not sure what to expect but I guess I will do my best and not set any expectation. 
+
+
+### Day 21: July 25, 2022 (Mon)
+
+**Today's Progress**: 
+- Started day 31 of 100 days of code which builds a flashcard app. I think I got like 60% done - has UI setup and basic functionality to flip the card on click.
+
+
+**What I learned**:
+- Python:
+  - How to update image and text in canvas - Tkinter.
+ 
+**Thoughts:** 
+- Didn't get as much study done as I would like to (~1 hour python). Been working a lot today, so will catch up tomorrow! Met with Sulil from X today and had a really good chat. Seems like a great oppotunity to work on and great leader to learn from. Beyond grateful to be this lucky to have a chat with them.
+
