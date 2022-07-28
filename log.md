@@ -510,3 +510,25 @@
  
 **Thoughts:** 
 - So far studied for ~2 hours on python. Will try to get some work done on AWS later on. :) 
+
+### Day 23: July 27, 2022 (Wed)
+
+**Today's Progress**: 
+- Started day 32 of 100 days of code which sends email. Been stuck again with gmail outh, but I know I will figure it out. 
+- Watched a few AWS videos on cloudformation.
+
+**What I learned**:
+- AWS:
+  - DependsOn
+  - Condition
+  - CreationPolicy and WaitCondition
+  - Nested stack vs. cross-stack references
+    - Cloudformation stacks is by default self contained and isolated.
+    - Resources cannot be referenced outside the stack. 
+    - Nested stack: have stacks nested within the root stack; resources can be referenced using "Output". All share the same lifecycle.
+    - Cross-stack reference: stacks are referencing the same resources using !input and export instead of !ref. can have different lifecycle. 
+  - stackset: 
+    - use to create stacks in different account and region. 
+ 
+**Thoughts:** 
+- Today was alright, didn't do as much but not too bad. AWS: 1 hour 20 mins, Python: 52 mins.
