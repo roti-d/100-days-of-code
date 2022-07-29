@@ -586,3 +586,4 @@
 - Didn't do much today as my mind kept thinking about Coinbase vs. X offers and been talking to various folks to get advice. Was a bit anxious. 
 - Got the googleAPI working but don't think I fully understand it, so going to spend a little more time on it. 
 - Started to also watch the Rapid learners video, which I think was pretty good. 
+- Time spent: AWS - 15 mins, python - 55 mins.
