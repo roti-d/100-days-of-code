@@ -520,8 +520,13 @@
 **What I learned**:
 - AWS:
   - DependsOn
+    - Most of the time AWS can tell what resources need to be created before other resources, but sometimes this dependency is implicit. E.g. Elastic IP depends on Internet gateway attachment, but Internet gateway attachment depends on first creating "Internet gateway and VPC".
   - Condition
+    - Condition is evaluated first before stack creation to determine what type of resources need to be created (e.g. for prod env, use Z1d EC2; for test env. use T1 micro).
   - CreationPolicy and WaitCondition
+    - Why do we need this? After CFN creates a stack, it doesn't know whether or not all bootstrap has been completed. It only knows whether or not the EC2 was provisioned successfully. 
+    - CreationPolicy ties to resource creation => when to create certain resources?
+    - WaitCondition: more general -> explicitly define how long a resource should wait before timing out or how many sucess CFN should receive before marking the stack as completed.
   - Nested stack vs. cross-stack references
     - Cloudformation stacks is by default self contained and isolated.
     - Resources cannot be referenced outside the stack. 
@@ -529,6 +534,55 @@
     - Cross-stack reference: stacks are referencing the same resources using !input and export instead of !ref. can have different lifecycle. 
   - stackset: 
     - use to create stacks in different account and region. 
+    - control by one single account (admin account) and stacks are created in target account.
+    - stacksets are just containers for stack instnaces, and stack instances are just containers of reference to one stack in one region.
+    - permission
  
 **Thoughts:** 
 - Today was alright, didn't do as much but not too bad. AWS: 1 hour 20 mins, Python: 52 mins.
+
+
+## Day 24: July 28, 2022 (Thurs)
+
+**Today's Progress**: 
+- Still working on day 32 of 100 days of code which sends email. Found a tutorial for using Gmail API; and successfully sent the first email. Been stuck with permission error for a while.
+- Watched one video on Deletion policy.
+- Watched two rapid learner video on getting started. 
+
+**What I learned**:
+- AWS:
+  - Deletion policy:
+    - when a stack is deleted, all physical resources are deleted, which might lead to data loss.
+    - Deletion policy allows users to specfy what to do with each resources. Options:
+      - delete (default)
+      - retain
+      - snapshot (only available for EBS, RDS, Redshift, ElasticCache; not EC2, not S3)
+- Rapid learner:
+  - Top 10 things about learning:
+    - Recall not review. 
+    - Space out time, don't cram information
+    - Don't memorize something that needs to be understood.
+    - Practice closer to what actually needs to be done.
+    - Paraphrase and summarize => don't highlight
+    - Transform to remember: process the infomation and put my own spin in it (e.g converting into mindmap)
+    - Be comfortable with frustration
+    - Maintenance Review goes a long way
+    - Sleep
+    - Be curious
+  - Have a project plan
+    - Define goal
+    - Identify material
+    - Estimate time required
+    - Set deadlines and milestones
+    - Put together week to week plan
+    - Update the plan every week
+- Python
+  - very high level how to auth to googleAPI
+  - Oauth2 token and serivce account
+    - Oauth2 token: allow users to login using loginID and passwords
+    - Servcei account: for bots to perform actions using Oauth2.
+ 
+**Thoughts:** 
+- Didn't do much today as my mind kept thinking about Coinbase vs. X offers and been talking to various folks to get advice. Was a bit anxious. 
+- Got the googleAPI working but don't think I fully understand it, so going to spend a little more time on it. 
+- Started to also watch the Rapid learners video, which I think was pretty good. 
