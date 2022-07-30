@@ -587,3 +587,21 @@
 - Got the googleAPI working but don't think I fully understand it, so going to spend a little more time on it. 
 - Started to also watch the Rapid learners video, which I think was pretty good. 
 - Time spent: AWS - 15 mins, python - 55 mins.
+
+## Day 25: July 29, 2022 (Fri)
+
+**Today's Progress**: 
+- Still working on day 32 of 100 days of code which sends email. Found a way to get around the "Less secure App" in Gmail using App password, which allows me to send email using SMTP.
+
+**What I learned**:
+- Thinking in Bets (book)
+  - Resulting - a phenomenal where decision quality != decision outcome, and people cannot differentiate between the two. 
+  - Game theory can be applied to many things in life.
+  - Poker is a game as it involves a luck factor, whereas chess is not. 
+- Python
+  - App password 
+  - Send email using SMTP
+ 
+**Thoughts:** 
+- Again didn't do much today as I was negotiating the salary with X and chatted with Coinbase. Finally accepted the offer. Felt like a big relief. 
+- Now really have to double down and get back to studying. :)
