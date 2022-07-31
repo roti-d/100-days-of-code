@@ -605,3 +605,33 @@
 **Thoughts:** 
 - Again didn't do much today as I was negotiating the salary with X and chatted with Coinbase. Finally accepted the offer. Felt like a big relief. 
 - Now really have to double down and get back to studying. :)
+
+## Day 26: July 30, 2022 (Sat)
+
+**Today's Progress**: 
+- Finally finished day 32 of 100 days of code which sends email. Coded two apps, one to send birthday wishes by going through a csv file using pandas; another one to send motivation quote every Monday.
+- Watched a few videos on AWS. Finally finished Cloudformation section and started on Dynamo DB. 
+
+**What I learned**:
+- Thinking in Bets (book)
+  - Everything in life is like making a bet. Most of the time, you are betting against a future version of yourself. You are evaluating whether this version of yourself would be better than the alternative. 
+  - Many people don't natually think this way; and have a bias towards believe everything they see/hear. 
+  - By prompting "want to bet?" makes people evaluate their beliefs. 
+  - We cannot make decision objectively, but at least we should try. 
+  - We should redefine confidence and think in terms of probability. I'm X% certain that Y will happen; instead of saying I'm sure Y will happen. This gives people around us ways to correct us when we are wrong as well as not making ourseleves feel bad when we get it wrong.  
+- Python
+  - How to use scheduler modudle to have the script run periodically
+  - Run code using pythonanywhere (although I didn't quite get it to work.)
+  - Dictionary can be used a key for another dictionary (e.g (day, month): row_of_data)
+- AWS
+  - cnf-init: an alternative way of bootstrapping; uer define desired state instead of providing instructions. 
+  - cfn-hup: given cfn-init only runs at launch, cfn-hup watches changes to the metadata and call cfn-init when changes are detected.
+  - ChangeSet: allow users to first preview the changes before applying to the cfn stack; users can create many "versions" and only apply the ones they want.
+  - Custom resources: allow users to perform actions that AWS doesn't support natively or intergrate with 3rd party. THis is done by invoking lambda function or SNS topics. Example:
+    - Load pics into S3 bucket at launch
+    - Delete S3 bucket that contains image
+  
+ 
+**Thoughts:** 
+- Feeling a bit sleepy all day so didn't do as much as I wanted, but still making some progress, so not bad. 
+- A bit tempted to start learning the coursera course on AI. Let me think through whether or not I should. I want to make sure I follow through, but at the same time want to start learning for the new role. 
