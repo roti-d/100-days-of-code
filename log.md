@@ -630,6 +630,20 @@
   - Custom resources: allow users to perform actions that AWS doesn't support natively or intergrate with 3rd party. THis is done by invoking lambda function or SNS topics. Example:
     - Load pics into S3 bucket at launch
     - Delete S3 bucket that contains image
+  - DynamoDB, key feature:
+    - NoSQL, use to start key/value pairs or documents
+    - Database-as-a-service product, users don't have to worry about infra/server
+    - Highly resilient: automatically backup in multiple nodes across AZs, can be configured to be gloabbly resilient. 
+    - Can be provisioned with capacity or pay on-demand
+    - Very fast (single digit milliseconds, based on SSD)
+    - Support encryption at rest
+    - Support point-in-time recovery and manual backup
+    - Support event driven 
+    - Users only pay for the resources they consume (storage used, RSU, WSU)
+      - 1 RSU = read 4KB data/ sec
+      - 1 WSU = write 1KB data/sec
+    - Capacitity has direct impact on speed
+  
   
  
 **Thoughts:** 
