@@ -649,3 +649,115 @@
 **Thoughts:** 
 - Feeling a bit sleepy all day so didn't do as much as I wanted, but still making some progress, so not bad. 
 - A bit tempted to start learning the coursera course on AI. Let me think through whether or not I should. I want to make sure I follow through, but at the same time want to start learning for the new role. 
+
+
+## Day 27: July 31, 2022 (Sun)
+
+**Today's Progress**: 
+- Finished all the lectures in the SAA course. 
+- Watched 1 video on Day 33 of 100 days of code that talks about API. 
+
+**What I learned**:
+- AWS
+  - DynamoDB:
+    - Backup options:
+      - on-demand backup
+      - point-in-time backup: allow play back to 1 second granularity, default data retention 35 days
+    - Consistency: can be eventual consistent or strong consistent
+      - eventual consistent is 50% cheaper
+      - Use Master and salves nodes 
+      - DynamoDB automatically replicates data in multiple AZs (can config to global)
+    - Performance: directly tie with capacity
+      - can be paid on demand or provision resources
+      - on demand is 5x more expensive
+      - the minimum unit is 1 RSU or 1 WSU (round up)
+    - Operations: support query and scan
+      - query: more efficient, retrieve the whole row; users need to paid for all data retrieved even for those that are filtered out later on.
+      - Scan: expansive, pay for all data scanned.
+    - Secondary Indexes: create another way for users to access data; e.g. for another team => making data retrieval more efficient and cost effective
+      - Local secondary index (LSI)
+        - strong consistency
+        - user defines another sort key
+        - user can only create LSI at table creation
+        - a table can have up to 5 LSI
+        - share RSU and WSU with the base table
+      - Gloabl secondary index (GSI)
+        - eventual consistency
+        - user defines another primary key and sort key
+        - user can create GSI at anytime
+        - a table can have up to 20 GSI
+        - use their own RSU and WSU 
+    - Streams & lambda
+      - generate events whenever there is data change in dynamoDB 
+      - 24 hours window
+      - output can be stored in S3 with records of what data has changed
+      - different types of records:
+        - New image (record only current state)
+        - old image (record only old state)
+        - key_only (record only primary and secondary key of the table)
+        - new and old image
+      - a Lambda function of SNS topics can be triggered to act on the event
+    - Global table
+      - eventual consistent
+      - multi-master model
+      - data is replicated within sub-seconds
+      - last-write wins
+      - provides global HA and global DR/BC
+    - DAX (DynamoDB Accelerator)
+      - DynamoDB built-in in-memory cache
+      - Much less admin overhead
+      - write through cache
+      - has read-write replicas
+      - support item cache and query cache
+        - item cache: cache the whole "row"
+        - query cache: cache the user query+ output
+      - HA
+      - Deployed within VPC, needs additional configuration to be used for services outside VPC
+    - Athena
+      - allow users to query S3 data by providing a schema
+      - schema-on-read
+      - the original data in S3 remains unchanged
+      - Good for ad-hoc use cases
+      - Can read data directly from EBS logs, cloudtrail and flow logs. 
+    - Elasticache
+      - in memory cache
+      - Supports redis and memcached
+      - Need application code change
+      - Support Aurora (not just dynamoDB)
+    - Redshift
+      - Database query product
+      - Use JDBC/ODBC connections
+      - Redshift spectrum: query Redshit without first loading data into the database
+      - Federation query: allow Redshift to query other data base
+      - Support OLAP data (column based; for analytics); usually gets data from OLTP (transactions / rows)
+      - Use for data aggregation or analysis
+      - Need provisioning
+      - Not good for ad-hoc query
+      - Run in single AZ in a VPC (user can enable Enhanced VPC routing)
+      - Data is automatically backup in S3 every 8 hours or 5GB
+- Python: 
+  - What's an API: instruction that tells how other applications can communicate with your application 
+ 
+**Thoughts:** 
+- Finsihed the coursework for AWS, now needs to start reviewing. Quite a productive day.
+
+
+## Day 28: Aug 1, 2022 (Mon)
+
+**Today's Progress**: 
+- Watched some AWS exams tips.
+- Did 1 section of practice exam on IAM. 
+- Reviewed notes on AWS basic, IAM and S3. 
+- Started Andrew Ng's machine learning course this morning, but a bit unsure whether or not I should study on that. 
+
+**What I learned**:
+- AWS
+  - STS: single token sign-on: create temporary access tokens 
+  - IAM user vs. IAM role vs. IAM group
+    - IAM roles can be assumed, use for services and for cross-account or users that are not logged-in
+    - IAM user: for long term access
+    - IAM group: group of users, cannot be associated with resource policy
+  - Different storage tiers in S3
+ 
+**Thoughts:** 
+- Not sure it was the best use of my time this morning to go through Andrew Ng's ML intro course. Might be better off finishing AWS exam or start on a course about RL. 
