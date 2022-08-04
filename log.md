@@ -761,3 +761,61 @@
  
 **Thoughts:** 
 - Not sure it was the best use of my time this morning to go through Andrew Ng's ML intro course. Might be better off finishing AWS exam or start on a course about RL. 
+
+## Day 29: Aug 2, 2022 (Tue)
+
+**Today's Progress**: 
+- Started doing practice AWS practice exam questions. Covered S3, IAM, EC2.
+- Started watching RL tutorials. 
+- Continue on day 33 of 100 days of code; reviewed a bit on API. 
+
+**What I learned**:
+- AWS
+  - EBS vs. EFS vs. S3
+    - EFS is for file storage, more expensive, good for use case multiple EC2 needs to connect to the same DB. (regional service)
+    - EBS is for block storage, low-latency; cheaper than EBS, but can only be mounted to 1 EC2. AZ service, data is automatically being replicated to multiple zones within the smae AZ.
+    - EC2 is object storage, cheapest among the three. Has multiple storage tier, but cannot be mounted to EC2. Regional service, allow users to create snapshots and can be move across region. 
+  - EBS
+    - SSD vs. HDD
+      - SSD is optimized for IOPS (i.e. like how fast the wheels are spinning)
+      - HDD is optimized for thoughput (i.e like how big the wheels are)
+      - SSD is good for small and random I/O and HDD is good for largle and consistent IOPs.
+- Python
+  - How to use the request package to call an API
+- RL
+  - RL is the intersection of decision making in psychology, machine learning, neuroscience and CS. 
+  - The goal for RL is to figure out the best actions to take to maximum the long term expected rewards.
+  - Key components in RL:
+    - Agent (who makes the decision)
+    - Env
+    - State
+    - Decision
+    - Reward 
+    - Stocastic component
+  - how does RL differ from supervised learning?
+    - RL has no labels to learn on
+    - Data is dependent on previous data (not IID)
+    - Rewards might be delayed.
+  - Markov process
+  - 3 different types of state
+    - env state, which agents can't see
+    - agent state => how agents see the world
+    - markov state => all history combined and being represented in one single state
+  - The job in RL is to be able to better represent the history so both agent and env can act on. 
+ 
+**Thoughts:** 
+- Reviewing AWS exam makes me feel like I'm not making as much progress :/ I want to wrap this up asap so I can study more on RL. 
+- RL seems really interesting, like the science of decision making. 
+
+## Day 30: Aug 3, 2022 (Wed)
+
+**Today's Progress**: 
+- Continue to review on AWS. 
+
+**What I learned**:
+- AWS
+  - going through practice exam questions
+ 
+**Thoughts:** 
+- Again feel like not making as much progress and not sure if I should keep going with the exam given I will have much less chances of using this. But I think I will still keep going and aim to take the exam within the next few days. 
+
