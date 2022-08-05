@@ -819,3 +819,25 @@
 **Thoughts:** 
 - Again feel like not making as much progress and not sure if I should keep going with the exam given I will have much less chances of using this. But I think I will still keep going and aim to take the exam within the next few days. 
 
+## Day 31: Aug 4, 2022 (Thurs)
+
+**Today's Progress**: 
+- AWS
+  - Completed 1 AWS timed practice exam, scored 76% (barely passed).
+  - The second exam attempt that I completed 30% only got 8 out of 25. 
+- RL
+  - Started reading "Introduction to RL"; seems like a pretty hard read. I was falling asleep after reading 1-2 pages. I might need to find another way to learn RL. 
+- Rapid learner
+  - It is important to plan projects ahead and continue to update the plan. 
+  - Key takeaway:
+    - Reframe frustraction as part of learning (i.e. brain is working hard)
+    - Have a plan and keep it updated
+    - Learn the minimum and start implementing
+
+**What I learned**:
+- AWS
+  - going through practice exam questions
+ 
+**Thoughts:** 
+- Scheudled the exam for Sunday! 
+- Reinforcement learning seems really interesting; I need to find a way to get mastery at it. 
