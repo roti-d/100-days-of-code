@@ -841,3 +841,66 @@
 **Thoughts:** 
 - Scheudled the exam for Sunday! 
 - Reinforcement learning seems really interesting; I need to find a way to get mastery at it. 
+
+## Day 32/33: Aug 5-6, 2022 (Fri & Sat)
+
+**Today's Progress**: 
+- AWS
+  - Studied AWS exam and did practice test
+
+**What I learned**:
+- AWS
+  - going through practice exam questions
+  - CloudWatch vs. CloudTrail vs. S3 server log:
+    - CloudWatch for metrics like CPU utitlization, Network in/out
+    - CloudTrail for monitoring activities like API calls, actions taken by users
+    - S3 Server log: detailed record of request made to S3
+  - AWS storage gateway vs. DataSync => both for moving on-perm data to AWS
+    - Storage gateway for integration (keeping on-perm DC)
+    - DataSync for migration
+  - AWS Control Tower: a central place for managing multiple account
+  - Secruity products
+    - Shield: for DDoS attack (free and advanced version)
+    - WAF: for SQL injection and other layer 7 attack
+    - Maice: for detecting PII data in S3
+    - GuardDuty: for detecting unexpected account activity
+  - ECS Fargate vs. ECS EC2 => both for container management
+    - Fargate: AWS managed infra
+    - ECS EC2: users controlling what kind of EC2 to use (type, size and network)
+  - What are the ways to connect on-perm with AWS?
+    - Direct connect: take weeks or months, physical connection, not encrypted by default, not HA by default
+    - Site-to-site VPN: easy to set up, secure via IPSec, not HA by default (need to add Customer gateway)
+  - Transit gateway: a way to connect all VPC, VPN and direct connect together to simplify the network 
+  - Storage gateway: to connect on-perm storage with AWS storage products
+    - Volumne gateway
+      - Cached mode: primary data stores in AWS
+      - Stored mode: primiary data stores in on-perm DC
+    - Tape gateway
+    - file gateway
+  - ELB vs. R53:
+    - ELB: route within region
+    - R53: route across region
+  - VPC endpoints:
+    - connect EC2 within VPC to services outside VPC
+      - Gateway endpoint: connect EC2 with S3 and DynamoDB
+      - Interface endpoint: everything else
+  - Identity pool vs. user pool
+    - identity pool for authentication => logging users in via SSO
+    - user pool for authorization => allowing users to use what resources
+**Thoughts:** 
+- Seems to have a better understanding of AWS, but still lots of things to learn. 
+
+## Day 34: Aug 7, 2022 (Sun)
+
+**Today's Progress**: 
+- AWS: 
+- RL:
+- Deep Learning:
+
+**What I learned**:
+- AWS: 
+- RL:
+- Deep Learning:
+
+**Thoughts:** 
+- 
