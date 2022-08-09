@@ -893,14 +893,44 @@
 ## Day 34: Aug 7, 2022 (Sun)
 
 **Today's Progress**: 
-- AWS: 
-- RL:
-- Deep Learning:
+- AWS: Completed AWS SAA exam. 
+- RL: Watched David Silver's RL class lecture 1. 
+- Deep Learning: Watched FastAI lecture 1. 
 
 **What I learned**:
-- AWS: 
 - RL:
+  - The goal for RL is to maximize the long term reward that the agent gets via trial and error (long term planning, require strategy)
+  - Key component: 
+    - agent: takes action in the env, get rewards, determine next steps and repeat
+    - env
+    - action
+    - reward
+  - State: a way to capture history that helps the agent to decide what actions to take. 3 main types of states:
+    - Agent state: what the agent view of the world is
+    - Env state
+    - Markov state: a state that fully captures the histroy. That is, by having markov state, the decision that the agent makes would be the same as if they have all the history. (e.g. env state and keep all history are both Markov).
+  - What's inside an agent (some are optional)? 
+    - Policy (behavior): mapping state to action
+    - Value function: predicting what's the reward for future actions 
+    - Agent's view of env state 
+  - Two main types of env:
+    - fully observerd env (MDP - Markov decision process)
+    - partially observed env (POMDP)
+  - Two main types of RL:
+    - Model based 
+    - Model free
+  - RL challenges:
+    - partially observed env
+    - learning vs. control?
+    - Multi-arm bandit?
 - Deep Learning:
+  - FastAI is a libaray that built on top of Pytouch
+  - Can train an model within seconds.
+  - steps of building a model:
+    - DataLoader(): getting data in the right form to ingest in model
+    - Train model?
+    - predic? 
+    - Fine_tune(): adjust model using tranform learning to improve error (given model was trained based on a different dataset).
 
 **Thoughts:** 
 - 
