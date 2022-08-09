@@ -912,25 +912,51 @@
   - What's inside an agent (some are optional)? 
     - Policy (behavior): mapping state to action
     - Value function: predicting what's the reward for future actions 
-    - Agent's view of env state 
+    - Agent's view of env state
+  - Three main types of agent:
+    - policy based (store policy)
+    - value based (store value)
+    - Active critic (store both policy and value) 
   - Two main types of env:
     - fully observerd env (MDP - Markov decision process)
     - partially observed env (POMDP)
   - Two main types of RL:
-    - Model based 
-    - Model free
-  - RL challenges:
-    - partially observed env
+    - Model based: a model first built to understand the env (e.g. when modeling helicopter, first build an env with wind condition, airflow etc.)
+    - Model free: use value and/or policy
+  - RL problem = sequential decision making
+    - explore vs. exploit
     - learning vs. control?
-    - Multi-arm bandit?
 - Deep Learning:
   - FastAI is a libaray that built on top of Pytouch
   - Can train an model within seconds.
   - steps of building a model:
     - DataLoader(): getting data in the right form to ingest in model
-    - Train model?
-    - predic? 
+    - Learner(): Train model
     - Fine_tune(): adjust model using tranform learning to improve error (given model was trained based on a different dataset).
 
 **Thoughts:** 
-- 
+- Wasn't sure if I was going to pass the AWS exam so a bit nervous. RL and DL are really fun! The more I read about it, the more I want to know about it! 
+
+## Day 35: Aug 8, 2022 (Mon)
+
+**Today's Progress**: 
+- AWS: Did a few practice question on AWS developer associate exam.
+- Deep Learning: Half way through reading FastAI chapter 1.
+
+**What I learned**:
+- AWS
+  - stage variable: 
+    - set in stage configuration during the deployment stage of REST API
+    - similar to env variable but can be passed onto mapping templates, lambda or other HTTP backends.
+    - key value pair
+  - Lambda: 
+    - has execution context that can act as "cache" to store some bootstrap info (e.g. download package from 3rd party)
+    - use for minimiziing the setup time when lambda is triggered the second time.
+- RL paper:
+  - Multi-agent RL can be used in supply chain, but this is only usable when the model has fully e2e data visiablity. 
+- RL podcast:
+  - Multi-agent RL can be modeled with social influence. That is, agents don't see each others value function but instead, only observe their behavior, which is more realistic. 
+  - Multi-agent problem faces Prisoner's dilemma as agents are all in partial observable env. 
+
+**Thoughts:** 
+- Met with Cathy and went to gym. Didn't do as much as I would love to but better than not doing anything. RL podcast seems very interesting!
