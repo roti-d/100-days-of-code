@@ -960,3 +960,54 @@
 
 **Thoughts:** 
 - Met with Cathy and went to gym. Didn't do as much as I would love to but better than not doing anything. RL podcast seems very interesting!
+
+## Day 35: Aug 9, 2022 (Tue)
+
+**Today's Progress**: 
+- RL: read search paper on Adaptive learning, multi-agent DRL on supply chain. Watched about 20 mins of David Silver's lecture 2. 
+- AWS: did a few AWS exam questions. 
+
+**What I learned**:
+- AWS
+  - Lambda integration proxy: a easy and powerful way to intergate API gateway and use Lambda as backend. 
+    - The API call is passed directly to Lambda, but the order is not preserved. 
+    - The response format MUST BE in JSON. 
+    - 502 error if format is not in JSON. 
+    - 504 error if request timed out. 
+    - To monitor backend and overall responsiveness, monitor IntegrationLatency and Latency. 
+  - SQS long polling vs. short polling:
+    - Long polling: more cost efficient, only poll messages when it arrives. 
+    - Short polling: poll messages as soon as they arrive to SQS. 
+  - Cloudfront:
+    - Self signed certificate is not needed between Cloudfront and origin. 
+    - ELB / ALB doesn't have default SSL. 
+    - To use HTTPs in cloudfront, change VIEWER POLICY to `USE HTTPS` and `REDIRECT HITTP TO HTTPS`.
+  - DynamoDB:
+    - Has TTL settings at item level?
+    - Atomic counter: use when Idempodent is NOT needed. 
+    - Condition Writes is used when multiple users are editing the same item. 
+  - AWS X-Ray:
+    - Has active tracing for Lambda, use for debugging applications
+  - AWS inspector: 
+    - use to detect vulnerability or unintended network accessibility
+- RL paper:
+  - The paper uses PPO (proximity policy optimization) which doesn't require extensive hyperparameter tuning and defined action space. 
+  - The model outperfroms base-stock model when env is challenging. 
+  - The agent showed exploited behavior at the end by not restocking as they know they cannot sell it before the time ends. This needs to be addressed if the model is used in real world. 
+  - The paper uses active-critic approach, where it has two models. One for determining actions and one for rewards.
+- David silver's lecture 2: 
+  - Markov process:
+    - Markov process (MDP): a memoryless set of random actions + transition matrix
+      - Markov properties: given the current state, it captures all the information from the previous states and the action will take the same action as if they have all the history. 
+      - All RL models can be treated as MDP, even in partial observable env. 
+      - Prob(reward at new state) = function(current state, transition matrix)
+        - Transition matrix represents the prob(state X -> state Y)
+        - Episode: samples of the markov process (from start to terminate state)
+    - Markov reward process: Markov process + reward + decay function
+      - Decay function is used to keep the reward finite, future is uncertain (model is not perfect) and mimic humna thinking (i.e. present value)
+      - Decay fucntion is between (0, 1); where 0 is being short-sighted and 1 is being extremely far-sighted. 
+
+
+**Thoughts:** 
+- Pretty productive day. Very exitied to learn more about RL. 
+
