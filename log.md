@@ -1011,3 +1011,38 @@
 **Thoughts:** 
 - Pretty productive day. Very exitied to learn more about RL. 
 
+
+## Day 36: Aug 10, 2022 (Wed)
+
+**Today's Progress**: 
+- RL: started reading search paper on DRL application on supply chain. Only finisihed introduction though. Continue watching David Silver's lecture 2. 
+- AWS: did a few AWS exam questions. 
+
+**What I learned**:
+- AWS
+  - ElasticBeanstalk is used to orchastraic different AWS services (i.e to setup, config and provision resources). 
+  - ElasticBeanstalk worker env can be used for decoupling long running applications. 
+    - It creates a SQS and put long response message there. It installs a daemon set on each of the EC2. Once the message is polled from the queue, the daemonsets sends a response to the client with the message. 
+- RL paper:
+  - Multi-agent, independent learner RL performs better than base-stock policy in challenging env. 
+  - Beer distribution game = classic supply-chain case study where there are 4 parties (manufactuor, distributor, warehouse, retailers). Each have to set their quantity to order. 
+  - Base-stock policy = "on-hand inventory + on-orders delivery" equals to demand??
+  - Base-stock policy is the optimal policy when all players act rationally (follow the same base-stock policy) and the market condition is not uncertain. However, if some players are not rational, there is no known optimal policy.
+- David silver's lecture 2: 
+  - Markov reward process: markov process + decay factor + reward
+    - Becaman equation: your expected return = immediate return + discounted return from future steps.
+  - Markov decision process: markov process + decay factor + reward + actions
+    - actions can be finitie/ infinite, discrete/ continuous
+    - Becaman equation:
+      - Value function:
+        - State value function: how good is it to be in state X given the agent continue to follow certain policy 
+        - Action value function: how good is it to take action A given state X given and the agent continue to follow certain policy 
+    - Policy: determines agent's behavior
+    - Optimal value policy: 
+      - optimal state-value function: what's the maximum return that can be extracted from the system.
+      - optimal action-value function: what's the best action to take given State X to maximize the return (goal for MDP is to solve for this)
+
+
+**Thoughts:** 
+- Didn't have good sleep the night before, only 2-3 hours; so the mind is noticeably more easy to get distrated. I caught myself couple times browsing on random website when I was watching RL videos. Given the amount of sleep, not too bad day. 
+
