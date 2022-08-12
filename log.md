@@ -1046,3 +1046,33 @@
 **Thoughts:** 
 - Didn't have good sleep the night before, only 2-3 hours; so the mind is noticeably more easy to get distrated. I caught myself couple times browsing on random website when I was watching RL videos. Given the amount of sleep, not too bad day. 
 
+## Day 37: Aug 11, 2022 (Thurs)
+
+**Today's Progress**: 
+- RL: finished David Silver's lecture 2, I think it took me 3 hours in total. Started reading the RL intro book, halfway through chapter 1. 
+- Python: attempted to code a bit but probably only got 10 mins
+
+**What I learned**:
+- David silver's lecture 2: 
+  - Optimal Reward function:
+    - Optimal State-value function: what's the most value I can extract from being in this state
+      - 2 steps look ahead:
+        - Step 1: Based on the actions that I can take, what states will I end up in.
+        - Step 2: Based on the state I ended up in step 1, what the env will bring me to in the next step? what the value function for that step?
+        - Back probagate the rewards and take max
+    - Optimal Actin-value function: what action gives me the most value from this point onward
+        - Two steps look ahead but take average
+- Optimal policy: the best way to behave. i.e. for value function at each state following the optimal policy is >= any other policy 
+  - For every MDP:
+    - There must be one or more optimal policy.
+    - In the same MDP, all optimal policy share the same optimal value function and optimal action-value function. 
+
+- Bellman Optimality equation (a way to solve MDP):
+    - Q* => Optimal action
+    - v* => Optimate state function
+  - Bellman equation is not linear, and has not closed solution. Thus needs to be solved using dynamic programming or q-learning.
+
+**Thoughts:** 
+- Didn't have good sleep the night before, only 2-3 hours; so the mind is noticeably more easy to get distrated. I caught myself couple times browsing on random website when I was watching RL videos. Given the amount of sleep, not too bad day. 
+
+
