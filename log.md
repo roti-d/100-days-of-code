@@ -1076,3 +1076,45 @@
 - Didn't have good sleep the night before, only 2-3 hours; so the mind is noticeably more easy to get distrated. I caught myself couple times browsing on random website when I was watching RL videos. Given the amount of sleep, not too bad day. 
 
 
+## Day 38: Aug 12, 2022 (Fri)
+
+**Today's Progress**: 
+- RL: rewatched David Silver lecture 2, started watching lecture 1.
+- AWS: did about 8-10 questions
+
+**What I learned**:
+- David silver's lecture 2: MDP
+  - Markov Process: memoryless sets of steps => The future is independent of the past given present
+    - The goal for RL is to maximize the long term return. 
+    - Return = sum of rewards 
+    - All RL problems can be formalized as MDP. 
+  - Markov reward process (MRP): Markov process + reward + discount factor
+    - value function => How good is it to be in this state? 
+    - Bellmon equation => breaks down value function into: the value fo being in state S = immediate reward of being in State S + rewards from State S onwards. 
+  - Markov decision process (MDP) = Markov Reward Process + Actions
+    - Policy = guide the agent what actions to take => prob of actions over all states
+    - Bellmon expectation equation:
+      - value state function = sum of (prob of action * value function from that action) following the same polcy
+      - action state function = immediate reward + discount factor * sum of (transition matrix * value function from next state) following the same polcy
+  - Optimal value function => what's the best policy to take in this MDP? 
+    - Bellmon optimality equation: 
+      - value state function = what's the max value function given all actions that can be taken? 
+      - action state function = immediate reward + discount factor * sum of (transition matrix * value function from next state based on the optimal polcy)
+  - David silver's lecture 3: Dynamic programming
+    - Dynamic programming = a way to breakdown large problems and solve them sequentially and recursively. Two properties:
+      - problems can be broken down into smaller pieces. => Bellmon equation
+      - solutions can be "cached" and use later => value function
+    - MDP can be solved using dynamic programming.
+
+- AWS 
+  - environmental variables: similar to stage variables but can be used by Lambda (stage variable is only for API gateway)
+    - can be used to pass variables to functional code 
+  - AWS Serverless Application Manager (AWS SAM): similar to cloudformation that uses templates to help dev build and manager stacks. But AWS SAM also allows devs to build, test and debug in local env.
+  - Kinessis data stream: uses KCL (Kinesis client library) worker to monitor and prcocess data from each shard. 
+    - 1 shard can only be processed by 1 worker
+    - 1 worker can process more than 1 shard.
+  - ElasticBeanstalk deployment mode: all at once, rolling, rolling with new, green/blue world, immutable.
+
+
+**Thoughts:** 
+- Rewatching the RL video defintiely helped a lot to help me put the piece back together. I was confused between 1 step look ahead and 2 steps look ahead and a few other major concepts.
