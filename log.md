@@ -1118,3 +1118,29 @@
 
 **Thoughts:** 
 - Rewatching the RL video defintiely helped a lot to help me put the piece back together. I was confused between 1 step look ahead and 2 steps look ahead and a few other major concepts.
+
+
+
+## Day 38: Aug 12, 2022 (Fri)
+
+**Today's Progress**: 
+- RL: rewatched David Silver lecture 2, started watching lecture 1.
+- AWS: did about 8-10 questions
+
+**What I learned**:
+- David silver's lecture 3: Dynamic Programming
+  - Dynamic programming = a sequential way of solving a probelm. 
+    - The problem can be subdivided into smaller problems.
+    - The solution can be "cached" 
+  - MDP can be solved using dynamic programming
+    - Bellmon equation => breakdown into smaller probles recursivly
+    - Solution can be "cached" => value function
+  - How to solve MDP?
+    - Policy iteration
+      - first evaluate the policy using Bellman expectation equation (i.e. taking average)
+      - then apply greedy algorithm
+    - Value iteration
+      - apply bellmon optimality equation (i.e taking max) 
+
+**Thoughts:** 
+- Took it a bit easy yesterday. Had lunch with Keith, went to gym and spent the night with DJ. Will get back to it today!
