@@ -1121,10 +1121,10 @@
 
 
 
-## Day 38: Aug 12, 2022 (Fri)
+## Day 39: Aug 13, 2022 (Sat)
 
 **Today's Progress**: 
-- RL: rewatched David Silver lecture 2, started watching lecture 1.
+- RL: continue watching DS lecture 3.
 - AWS: did about 8-10 questions
 
 **What I learned**:
@@ -1144,3 +1144,68 @@
 
 **Thoughts:** 
 - Took it a bit easy yesterday. Had lunch with Keith, went to gym and spent the night with DJ. Will get back to it today!
+
+
+
+## Day 40: Aug 14, 2022 (Sun)
+
+**Today's Progress**: 
+- RL: finished DS lecture 3; read the slides for lecture 4 and watched for ~10 mins.
+- Deep learning: Almost finishing reading chaper 1 of fastAI. 
+- AWS: did about 8-10 questions
+
+**What I learned**:
+- David silver's lecture 3: Dynamic Programming
+  - Dynamic programming can be used to solve KNOWN MDP, where env (transition matrix, rewards) is given. 
+  - There are two main types of probelms.
+    - Predict: given a policy, how good is it? (how much reward can we get by following this policy?)
+      - Use policy evaluation: i.e. to apply Bellmon expectation equation to all states and update v(s)
+        - v(s) = r + sum[prob(s')*v(s')]
+      - This guarantee converges; the updates can be done sync or async. 
+    - Control: what's the optimal policy for this MDP? (how to act optimally to get the max rewards?)
+      - either use policy iteration or value iteration. 
+        - policy iteration: do policy evaluation, then act greedily at every step
+        - value iteration: apply Bellmon optimality equation 
+          - we are not explicitiy building policy. i.e. any intermediate steps might not lead to any policy.
+    - Time complexity is O(mn^2) where m is number of acions and n is number of states
+      - n^2 because we have to consider update every state in each iteration and for each state, there is n other possible states to the agent can transition to.
+  - Async update: to save compuational cost
+    - in-place DP: don't keep previous copy of v(s)
+    - Prioritise sweeping: largest delta: only update parts where v(s) changes the most
+    - real time DP: have a robot wander around the env and only update the parts it passes
+
+- David silver's lecture 4: Model free prediction
+  - DP can only be used when the env is known. For env that's unknown, we need to use either Monte Carlo learning or Temporal Difference.
+  - Monte Carlo learns from episode.
+    - as long as all states are covered, the order of which states the agent visited doesn't matter.
+    - Uses emperical mean => v(s) = average v(s) from all iterations.
+
+- FastAI: 
+  - 4 main steps in using FastAI for deep learning:
+    - dataLoader() => get the data into the right format
+    - learner() => tell the model what pre-trained model to use
+    - fit() or fine_tune() => the model will drop the last layer of NN to fit it specically to this new dataset. 
+    - predict() 
+  - epoach => 1 full iteration of the data
+  - Image classification can be applied to many other areas outside classifying photos. Many real world problems can be represented as picture. e.g. fraud detection. 
+  - Transfer learning = Taking a pre-trained model and applying it to another use case that it wasn't initially trained on 
+  - Stochastic gradient descent (SGD): use to update the weights in Neural network
+  - Difference between loss and metrics?
+    - loss => use for SGD to update weights
+    - metrics => use for human to evaluation model performance
+
+
+- AWS:
+  - In AWS SAM (Serverless application manager), an application can have one or more nested application. This is specified in the configuration as AWS::SERVERLESS::APPLICATION.
+    - AWS::SERVERLESS::API: for API gateway
+    - AWS::SERVERLESS::Layer for passing into to lambda
+    - AWS::SERVERLESS::Function = for lambda function
+  - To connect custom API endpoint with API gateway: can use either proxy intergration or custom intergration
+    - HTTP: for HTTP custom integration where we need to map incoming request with integration response. 
+    - HTTP Proxy: for HTTP proxy intergration, where there is no need to map incoming request with integration response.
+    - AWS: for AWS custom integration
+    - AWS Proxy: for AWS proxy intergration
+
+
+**Thoughts:** 
+- Studied for about 4 hours; probably the max amount I can study over the weekend if I want to spend sometime with DJ. 
