@@ -1209,3 +1209,40 @@
 
 **Thoughts:** 
 - Studied for about 4 hours; probably the max amount I can study over the weekend if I want to spend sometime with DJ. 
+
+
+
+## Day 40: Aug 14, 2022 (Sun)
+
+**Today's Progress**: 
+- RL: finished DS lecture 4
+- Deep learning: finished reading FastAi chapter 1
+
+**What I learned**:
+- David silver's lecture 4: Model free prediction
+  - Model free prediction, where env (transition matrix and rewards) is unknown, can be done using Monte-Carlo learning or Temporal learning.
+  - Monte Carlo: 
+    - learn from the whole episode,  only works when episode terminates
+    - zero bias but large variance
+    - basic idea: run many episodes and record the total rewards, then take average. Update the current estimated total reward by a little based on the new sample reward.
+      - first visit MC: only count the reward when the agent first passes the state
+      - every visit MC: count the reward fro every visit that the agent made pass the state.
+      - when to use first visit vs. every visit depends on the domain
+    - incremental mean: incrementally increase the estimated mean by a little based on the sample reward. 
+    - Still converge using function approximation.
+  - Temporal learning:
+    - learn from bootstrapping => i.e. updating guessed value function using a new guessed function => works also for non-terminating episodes.
+    - more efficient than MC
+    - larger bias but small variance. 
+    - TD(0): update guessed value function based on 1 step look ahead.
+      - substituting estimated mean based on bellmon equation: reward + discounted expected reward at t+1. 
+    - might not converge when using function approximation.
+  - TD(lambda)
+    - instead of doing 1 step look ahead in TD(0), TD works at n-step look ahead. 
+    - When n = terminate state, then TD(n) = MC
+    - Two ways of doing TD(lamdba)
+      - forward looking => suffers the same draw back as MC where rewards only get updated at the end of episode. 
+      - backward looking => using eligiblity curve to update the states that contributes the most error (i.e. sample mean - prev est. mean)
+
+**Thoughts:** 
+- I printed out all the slides and took notes there via watching the video. I think this works better as I can later transfer the notes to REM notes. 
