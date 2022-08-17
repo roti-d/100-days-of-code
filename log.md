@@ -1246,3 +1246,15 @@
 
 **Thoughts:** 
 - I printed out all the slides and took notes there via watching the video. I think this works better as I can later transfer the notes to REM notes. 
+
+
+## Day 41: Aug 15, 2022 (Mon)
+
+**Today's Progress**: 
+- None, spent majority of the day reviewing Fractal's doc. 
+
+**What I learned**:
+- Overview of Fractal, how they are thinking about the problem.
+
+**Thoughts:** 
+- Need to get back to this today. Can't go on two days without self-study.
