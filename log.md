@@ -1258,3 +1258,14 @@
 
 **Thoughts:** 
 - Need to get back to this today. Can't go on two days without self-study.
+
+## Day 42: Aug 16, 2022 (Tue)
+
+**Today's Progress**: 
+- None, spent majority of the day reviewing Fractal's doc. 
+
+**What I learned**:
+- Tech roadmap and RL design doc. 
+
+**Thoughts:** 
+- Will get back to RL studying today. 
