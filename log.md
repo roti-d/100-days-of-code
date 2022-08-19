@@ -1269,3 +1269,29 @@
 
 **Thoughts:** 
 - Will get back to RL studying today. 
+
+## Day 43: Aug 18, 2022 (Thurs)
+
+**Today's Progress**: 
+- Rewatched the 2nd half of David Silver lecture 4 on forward looking TD and backward looking TD. 
+
+**What I learned**:
+- 2 main dimensions in predicting MDP => i.e. calculating the value function of an MDP  
+  - Sampling
+    - MC and TD sample
+    - DP doesn't sample
+  - Bootstrap (i.e. use patial path instead of going to the end of the episode)
+    - MC and DP don't bootstrap
+    - TD bootstrap
+- TD lambda
+  - Besdies TD(0), which is one-step look ahead, we can also sue TD(lamdba).
+  - Foward looking
+    - TD(lambda) takes geometry means of all lambda. i.e. for every lambda, use (1-lambda)*(lambda^n) as weight.
+    - However, this approach suffers the same downside as MC as we have to wait till the end of the episode to update the value function. 
+    - Thus, we can use "backward looking TD(lambda).
+  - Backward looking
+    - In backward looking TD, we use eligibility trace to see what states had contribute to the most error and update those. 
+    - i.e. first do 1 step look ahead like TD(0), then udpate state based on TD error and eligibility trace.
+
+**Thoughts:** 
+- My ADD was very severe yeseterday and wasn't able to study much nor even focus. I guess my body just really wanted to sleep. The sleep last night (Friday) was amazing, and I feel a lot better today. Will put back in more time to study. 
