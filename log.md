@@ -1295,3 +1295,62 @@
 
 **Thoughts:** 
 - My ADD was very severe yeseterday and wasn't able to study much nor even focus. I guess my body just really wanted to sleep. The sleep last night (Friday) was amazing, and I feel a lot better today. Will put back in more time to study. 
+
+
+## Day 44: Aug 19, 2022 (Fri)
+
+**Today's Progress**: 
+- Finally got back to studying. Watched ~20mins of David Silver's lecture 5. 
+
+**What I learned**:
+- Model free control:
+  - 2 main types:
+    - on-policy: "learn on the job", the actions that you take influence the policy you learn
+    - off-policy: "watch over someone else's shoulder", like a robot watching other robot to do the job then learn about the policy.
+  - on-policy
+    - using Monte Carlo + act greedy
+      - won't work due to 1) given this is model free, we don't know the transiton matrix to act greedy; 2) won't be able to explore enough. 
+      - To solve problem #1: instead of using state-value function (V), use action value function (Q)
+        - i.e. at every state, compute q(s,a)
+      - To solve problem #2: use ∈ greedy algorithm.
+        - i.e for ∈ probabilty, take random action. For 1-∈ prob, act greedy. 
+
+**Thoughts:** 
+- Feels good to be able to study again. Need to find back to rhythm and get more study time. 
+
+
+## Day 45: Aug 20, 2022 (Sat)
+
+**Today's Progress**: 
+- Finally finished David Silver lecture 5, studied for ~4.5 30 mins promodoro yesterday.
+- Let's try to do at least 5 total everyday with 1 for studying.
+
+**What I learned**:
+- Model free control:
+  - On-policy learning:
+    - MC:
+      - Can't directly use Monti-Carlo on state-value function + Greedy to do model free control because we don't know the transition matrix and we might not have explored enough. 
+      - To solve the not knowing model dynamics, we use MC on action value function + "∈ greedy policy". 
+    - SARSA(lambda)
+      - Another approach is to use TD instead of MC. 
+      - SARSA(lambda) uses eligibility trace to propagate the "learnings" backward. The larger lambda is, the further it propagates (i.e. higher variance but less bias). 
+      - We keep track of the eligibilty trace for all (s,a). 
+        - everytime we pass by a certain (s,a); we increment the counter at that (s,a) by 1. 
+        - at every step, we decay all (s,a) by a little. 
+        - SARSA can be done with forward view or backward view. 
+          - Backward view Q(s,a) = Q(s,a)+ (alpha* TD error* E(s,a))
+            - alpha = fixed constant => learning rate
+            - TD-error = R(t+1) + "discount factor"Q(s,a)(t+1) - Q(S,A)
+    - Off-plolicy learning
+      - Why do we want to do that? 
+        - can learn from old policy
+        - batch update
+        - can learn from alternative path while following one path
+        - can learn from some other robots/humna
+      - How to do it? 
+        - Importance sampling
+        - Q-learning
+
+**Thoughts:** 
+- Didn't studied or worked as much as I would like to; but still alright. Better than not doing it at all. met with Kat and Jon yesterday for dim sum; it was really nice. 
+
