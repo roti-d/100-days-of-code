@@ -1354,3 +1354,14 @@
 **Thoughts:** 
 - Didn't studied or worked as much as I would like to; but still alright. Better than not doing it at all. met with Kat and Jon yesterday for dim sum; it was really nice. 
 
+
+## Day 46: Aug 21, 2022 (Sun)
+
+**Today's Progress**: 
+- Didn't do much studying today. Spent most of the time with DJ and the rest of time watching FR videos. 
+
+**What I learned**:
+- n/a
+
+**Thoughts:** 
+- It is tough to balanace between work, study and family. I need to find a good way to do this and not burn myself out. 
