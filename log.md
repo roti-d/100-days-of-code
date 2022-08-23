@@ -1365,3 +1365,29 @@
 
 **Thoughts:** 
 - It is tough to balanace between work, study and family. I need to find a good way to do this and not burn myself out. 
+
+
+
+## Day 47: Aug 22, 2022 (Mon)
+
+**Today's Progress**: 
+- Rewatched a bit of David Silver's lecture 5 on Model free learning. 
+
+**What I learned**:
+- Model free learning can be done on-policy or off-policy. 
+  - On-policy:
+    - Monte Carlo on Q-value + ∈ greedy policy.
+      - need to use Q value because this is model free and we don't know the transition matrix.
+      - need to use ∈ greedy instead of greedy because we don't want to get stuck in local maximum.
+      - To do MC efficiently, we can do policy optimization after every episode instead of wait till the q-value for that q(s,a) converges
+      - Greedy in the Limiit with Infinite Exploration(GLIE): 
+        - all states, actions must be explored infinite number of times, 
+        - The policy converges on a greedy policy
+      - GLIE Monte Carlo control
+        - GLIE MC => uses 1/k
+        - Every time a state-action is visited, increment the counter by 1. 
+        - Update the q(s,a) by `estiamated q(s,a) - current-q(s,q)/counter`
+
+**Thoughts:** 
+- Feel like I'm getting lazy, and not spending enough time at work and study. Need to get back to it!!!
+
