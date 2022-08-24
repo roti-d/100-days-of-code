@@ -1391,3 +1391,16 @@
 **Thoughts:** 
 - Feel like I'm getting lazy, and not spending enough time at work and study. Need to get back to it!!!
 
+
+
+## Day 48: Aug 23, 2022 (Tue)
+
+**Today's Progress**: 
+- Didn't ended up studying at all as I was in the office yesterday. My plan is to at least attempt one coding question every day just to keep it fresh. 
+
+**What I learned**:
+- n/a
+
+**Thoughts:** 
+- Need to get back to it today. 
+
