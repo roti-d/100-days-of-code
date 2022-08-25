@@ -1404,3 +1404,17 @@
 **Thoughts:** 
 - Need to get back to it today. 
 
+
+
+## Day 49: Aug 24, 2022 (Wed)
+
+**Today's Progress**: 
+- Did one python question on codewar.
+
+**What I learned**:
+- n/a
+
+**Thoughts:** 
+- Will put in more time on Fri or over the weekend. 
+
+
